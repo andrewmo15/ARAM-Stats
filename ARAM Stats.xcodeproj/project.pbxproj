@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621500C82AB9405500A5890F /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621500C72AB9405500A5890F /* UserDetailView.swift */; };
+		62B34ED02AB4AD2500247E29 /* ARAM_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B34ECF2AB4AD2500247E29 /* ARAM_StatsApp.swift */; };
+		62B34ED22AB4AD2500247E29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B34ED12AB4AD2500247E29 /* ContentView.swift */; };
+		62B34ED42AB4AD2700247E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B34ED32AB4AD2700247E29 /* Assets.xcassets */; };
+		62B34ED72AB4AD2700247E29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B34ED62AB4AD2700247E29 /* Preview Assets.xcassets */; };
+		62B34ED92AB4AD2700247E29 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B34ED82AB4AD2700247E29 /* Persistence.swift */; };
+		62B34EDC2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62B34EDA2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld */; };
+		62CA19F32AB8BEFC0084F98C /* GameAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19F22AB8BEFC0084F98C /* GameAPI.swift */; };
+		62CA19F52AB8BF4C0084F98C /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19F42AB8BF4C0084F98C /* UserAPI.swift */; };
+		62CA19F72AB8BFA60084F98C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19F62AB8BFA60084F98C /* APIController.swift */; };
+		62CA19FB2AB8C4590084F98C /* GameOverviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19FA2AB8C4590084F98C /* GameOverviewCard.swift */; };
+		62CA19FD2AB900A10084F98C /* dragontail-13.18.1 in Resources */ = {isa = PBXBuildFile; fileRef = 62CA19FC2AB900A00084F98C /* dragontail-13.18.1 */; };
+		62CA1A3A2AB907910084F98C /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA1A392AB907910084F98C /* GameDetailView.swift */; };
+		62CA1A3C2AB90FCA0084F98C /* DataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA1A3B2AB90FCA0084F98C /* DataProcess.swift */; };
+		62CA1A3E2AB910730084F98C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA1A3D2AB910730084F98C /* Game.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62B34EE22AB4AD2700247E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B34EC42AB4AD2500247E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B34ECB2AB4AD2500247E29;
+			remoteInfo = "ARAM Stats";
+		};
+		62B34EEC2AB4AD2700247E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B34EC42AB4AD2500247E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B34ECB2AB4AD2500247E29;
+			remoteInfo = "ARAM Stats";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		621500C72AB9405500A5890F /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		62B34ECC2AB4AD2500247E29 /* ARAM Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARAM Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B34ECF2AB4AD2500247E29 /* ARAM_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAM_StatsApp.swift; sourceTree = "<group>"; };
+		62B34ED12AB4AD2500247E29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62B34ED32AB4AD2700247E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B34ED62AB4AD2700247E29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62B34ED82AB4AD2700247E29 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		62B34EDB2AB4AD2700247E29 /* ARAM_Stats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARAM_Stats.xcdatamodel; sourceTree = "<group>"; };
+		62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CA19F22AB8BEFC0084F98C /* GameAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAPI.swift; sourceTree = "<group>"; };
+		62CA19F42AB8BF4C0084F98C /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		62CA19F62AB8BFA60084F98C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		62CA19FA2AB8C4590084F98C /* GameOverviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverviewCard.swift; sourceTree = "<group>"; };
+		62CA19FC2AB900A00084F98C /* dragontail-13.18.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "dragontail-13.18.1"; sourceTree = "<group>"; };
+		62CA1A392AB907910084F98C /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		62CA1A3B2AB90FCA0084F98C /* DataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcess.swift; sourceTree = "<group>"; };
+		62CA1A3D2AB910730084F98C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62B34EC92AB4AD2500247E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B34EDE2AB4AD2700247E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B34EE82AB4AD2700247E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62B34EC32AB4AD2500247E29 = {
+			isa = PBXGroup;
+			children = (
+				62B34ECE2AB4AD2500247E29 /* ARAM Stats */,
+				62B34ECD2AB4AD2500247E29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62B34ECD2AB4AD2500247E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B34ECC2AB4AD2500247E29 /* ARAM Stats.app */,
+				62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */,
+				62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62B34ECE2AB4AD2500247E29 /* ARAM Stats */ = {
+			isa = PBXGroup;
+			children = (
+				62CA19FC2AB900A00084F98C /* dragontail-13.18.1 */,
+				62CA19F12AB8BEC00084F98C /* Controllers */,
+				62CA19F02AB8BEB90084F98C /* Views */,
+				62CA19EF2AB8BEA90084F98C /* Models */,
+				62B34ED32AB4AD2700247E29 /* Assets.xcassets */,
+				62B34ED82AB4AD2700247E29 /* Persistence.swift */,
+				62B34EDA2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld */,
+				62B34ED52AB4AD2700247E29 /* Preview Content */,
+			);
+			path = "ARAM Stats";
+			sourceTree = "<group>";
+		};
+		62B34ED52AB4AD2700247E29 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62B34ED62AB4AD2700247E29 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62CA19EF2AB8BEA90084F98C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62CA19F22AB8BEFC0084F98C /* GameAPI.swift */,
+				62CA19F42AB8BF4C0084F98C /* UserAPI.swift */,
+				62CA1A3D2AB910730084F98C /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62CA19F02AB8BEB90084F98C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62B34ECF2AB4AD2500247E29 /* ARAM_StatsApp.swift */,
+				62B34ED12AB4AD2500247E29 /* ContentView.swift */,
+				62CA19FA2AB8C4590084F98C /* GameOverviewCard.swift */,
+				62CA1A392AB907910084F98C /* GameDetailView.swift */,
+				621500C72AB9405500A5890F /* UserDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62CA19F12AB8BEC00084F98C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62CA19F62AB8BFA60084F98C /* APIController.swift */,
+				62CA1A3B2AB90FCA0084F98C /* DataProcess.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62B34ECB2AB4AD2500247E29 /* ARAM Stats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B34EF52AB4AD2700247E29 /* Build configuration list for PBXNativeTarget "ARAM Stats" */;
+			buildPhases = (
+				62B34EC82AB4AD2500247E29 /* Sources */,
+				62B34EC92AB4AD2500247E29 /* Frameworks */,
+				62B34ECA2AB4AD2500247E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARAM Stats";
+			productName = "ARAM Stats";
+			productReference = 62B34ECC2AB4AD2500247E29 /* ARAM Stats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62B34EE02AB4AD2700247E29 /* ARAM StatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B34EF82AB4AD2700247E29 /* Build configuration list for PBXNativeTarget "ARAM StatsTests" */;
+			buildPhases = (
+				62B34EDD2AB4AD2700247E29 /* Sources */,
+				62B34EDE2AB4AD2700247E29 /* Frameworks */,
+				62B34EDF2AB4AD2700247E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B34EE32AB4AD2700247E29 /* PBXTargetDependency */,
+			);
+			name = "ARAM StatsTests";
+			productName = "ARAM StatsTests";
+			productReference = 62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62B34EEA2AB4AD2700247E29 /* ARAM StatsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B34EFB2AB4AD2700247E29 /* Build configuration list for PBXNativeTarget "ARAM StatsUITests" */;
+			buildPhases = (
+				62B34EE72AB4AD2700247E29 /* Sources */,
+				62B34EE82AB4AD2700247E29 /* Frameworks */,
+				62B34EE92AB4AD2700247E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B34EED2AB4AD2700247E29 /* PBXTargetDependency */,
+			);
+			name = "ARAM StatsUITests";
+			productName = "ARAM StatsUITests";
+			productReference = 62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62B34EC42AB4AD2500247E29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					62B34ECB2AB4AD2500247E29 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					62B34EE02AB4AD2700247E29 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 62B34ECB2AB4AD2500247E29;
+					};
+					62B34EEA2AB4AD2700247E29 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 62B34ECB2AB4AD2500247E29;
+					};
+				};
+			};
+			buildConfigurationList = 62B34EC72AB4AD2500247E29 /* Build configuration list for PBXProject "ARAM Stats" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62B34EC32AB4AD2500247E29;
+			productRefGroup = 62B34ECD2AB4AD2500247E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62B34ECB2AB4AD2500247E29 /* ARAM Stats */,
+				62B34EE02AB4AD2700247E29 /* ARAM StatsTests */,
+				62B34EEA2AB4AD2700247E29 /* ARAM StatsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62B34ECA2AB4AD2500247E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CA19FD2AB900A10084F98C /* dragontail-13.18.1 in Resources */,
+				62B34ED72AB4AD2700247E29 /* Preview Assets.xcassets in Resources */,
+				62B34ED42AB4AD2700247E29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B34EDF2AB4AD2700247E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B34EE92AB4AD2700247E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62B34EC82AB4AD2500247E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CA19F72AB8BFA60084F98C /* APIController.swift in Sources */,
+				62B34ED92AB4AD2700247E29 /* Persistence.swift in Sources */,
+				62CA19F32AB8BEFC0084F98C /* GameAPI.swift in Sources */,
+				62CA19F52AB8BF4C0084F98C /* UserAPI.swift in Sources */,
+				621500C82AB9405500A5890F /* UserDetailView.swift in Sources */,
+				62CA19FB2AB8C4590084F98C /* GameOverviewCard.swift in Sources */,
+				62CA1A3C2AB90FCA0084F98C /* DataProcess.swift in Sources */,
+				62CA1A3E2AB910730084F98C /* Game.swift in Sources */,
+				62B34ED22AB4AD2500247E29 /* ContentView.swift in Sources */,
+				62CA1A3A2AB907910084F98C /* GameDetailView.swift in Sources */,
+				62B34EDC2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld in Sources */,
+				62B34ED02AB4AD2500247E29 /* ARAM_StatsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B34EDD2AB4AD2700247E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B34EE72AB4AD2700247E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62B34EE32AB4AD2700247E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B34ECB2AB4AD2500247E29 /* ARAM Stats */;
+			targetProxy = 62B34EE22AB4AD2700247E29 /* PBXContainerItemProxy */;
+		};
+		62B34EED2AB4AD2700247E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B34ECB2AB4AD2500247E29 /* ARAM Stats */;
+			targetProxy = 62B34EEC2AB4AD2700247E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62B34EF32AB4AD2700247E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62B34EF42AB4AD2700247E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62B34EF62AB4AD2700247E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARAM Stats/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-Stats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62B34EF72AB4AD2700247E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARAM Stats/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-Stats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62B34EF92AB4AD2700247E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-StatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARAM Stats.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARAM Stats";
+			};
+			name = Debug;
+		};
+		62B34EFA2AB4AD2700247E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-StatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARAM Stats.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARAM Stats";
+			};
+			name = Release;
+		};
+		62B34EFC2AB4AD2700247E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-StatsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARAM Stats";
+			};
+			name = Debug;
+		};
+		62B34EFD2AB4AD2700247E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-StatsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARAM Stats";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62B34EC72AB4AD2500247E29 /* Build configuration list for PBXProject "ARAM Stats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B34EF32AB4AD2700247E29 /* Debug */,
+				62B34EF42AB4AD2700247E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B34EF52AB4AD2700247E29 /* Build configuration list for PBXNativeTarget "ARAM Stats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B34EF62AB4AD2700247E29 /* Debug */,
+				62B34EF72AB4AD2700247E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B34EF82AB4AD2700247E29 /* Build configuration list for PBXNativeTarget "ARAM StatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B34EF92AB4AD2700247E29 /* Debug */,
+				62B34EFA2AB4AD2700247E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B34EFB2AB4AD2700247E29 /* Build configuration list for PBXNativeTarget "ARAM StatsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B34EFC2AB4AD2700247E29 /* Debug */,
+				62B34EFD2AB4AD2700247E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		62B34EDA2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62B34EDB2AB4AD2700247E29 /* ARAM_Stats.xcdatamodel */,
+			);
+			currentVersion = 62B34EDB2AB4AD2700247E29 /* ARAM_Stats.xcdatamodel */;
+			path = ARAM_Stats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 62B34EC42AB4AD2500247E29 /* Project object */;
+}
