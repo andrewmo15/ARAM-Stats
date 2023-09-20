@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct ARAM_StatsApp: App {
-    let persistenceController = PersistenceController.shared
+    
+    @StateObject private var dataController = SearchHistoryController()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

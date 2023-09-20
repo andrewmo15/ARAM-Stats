@@ -9,7 +9,8 @@ import SwiftUI
 
 struct GameDetailView: View {
     
-    var game: Game
+    @State var game: Game
+    @State var region: String
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -19,7 +20,9 @@ struct GameDetailView: View {
                 Text("\(game.team1.turretsLost), \(game.team1.inhibitorsLost)")
             }
             ForEach(game.team1.participants) { user in
-                UserDetailView(user: user)
+                NavigationLink(destination: GameOverviewView(username: user.summonerName, region: region)) {
+                    UserDetailView(user: user)
+                }
             }
             
             HStack {
@@ -28,7 +31,9 @@ struct GameDetailView: View {
                 Text("\(game.team2.turretsLost), \(game.team2.inhibitorsLost)")
             }
             ForEach(game.team2.participants) { user in
-                UserDetailView(user: user)
+                NavigationLink(destination: GameOverviewView(username: user.summonerName, region: region)) {
+                    UserDetailView(user: user)
+                }
             }
         }
     }
