@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Game: Identifiable {
+struct Game: Identifiable, Hashable {
     var id: String
     var gameInfo: Info
     var userGameDetails: Participant
@@ -15,13 +15,13 @@ struct Game: Identifiable {
     var team2: Team
 }
 
-struct Info {
+struct Info: Hashable {
     var gameDuration: Int
     var daysElapsed: Int
     var gameMode: String
 }
 
-struct Team {
+struct Team: Hashable {
     var participants: [Participant]
     var isBlueSide: Bool
     var win: Bool
@@ -32,7 +32,7 @@ struct Team {
     var inhibitorsLost: Int
 }
 
-struct Participant: Identifiable {
+struct Participant: Identifiable, Hashable {
     var assists: Int
     var champLevel: Int
     var championName: String
