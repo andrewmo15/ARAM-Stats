@@ -17,27 +17,27 @@ struct UserDetailView: View {
                 .fill(Color.red)
                 .frame(height: 100)
             HStack {
-                Text("\(user.championName)")
+                Image(user.championName).resizable().frame(width: 32.0, height: 32.0)
                 VStack(alignment: .leading) {
                     HStack {
                         VStack {
-                            Text("\(user.summoner1Id)")
-                            Text("\(user.summoner2Id)")
+                            Image(user.summoner1Id).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.summoner2Id).resizable().frame(width: 32.0, height: 32.0)
                         }
                         VStack {
-                            Text("\(user.rune1)")
-                            Text("\(user.rune2)")
+                            Image(user.rune1).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.rune2).resizable().frame(width: 32.0, height: 32.0)
                         }
                     }
                     VStack {
                         HStack {
-                            Text("\(user.item0)")
-                            Text("\(user.item1)")
-                            Text("\(user.item2)")
-                            Text("\(user.item3)")
-                            Text("\(user.item4)")
-                            Text("\(user.item5)")
-                            Text("\(user.item6)")
+                            Image(user.item0).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.item1).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.item2).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.item3).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.item4).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.item5).resizable().frame(width: 32.0, height: 32.0)
+                            Image(user.item6).resizable().frame(width: 32.0, height: 32.0)
                         }
                         Text("\(user.kills)/\(user.deaths)/\(user.assists)")
                     }

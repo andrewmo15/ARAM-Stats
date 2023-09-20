@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		621500C82AB9405500A5890F /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621500C72AB9405500A5890F /* UserDetailView.swift */; };
-		62B34ED02AB4AD2500247E29 /* ARAM_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B34ECF2AB4AD2500247E29 /* ARAM_StatsApp.swift */; };
-		62B34ED22AB4AD2500247E29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B34ED12AB4AD2500247E29 /* ContentView.swift */; };
-		62B34ED42AB4AD2700247E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B34ED32AB4AD2700247E29 /* Assets.xcassets */; };
-		62B34ED72AB4AD2700247E29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B34ED62AB4AD2700247E29 /* Preview Assets.xcassets */; };
-		62B34ED92AB4AD2700247E29 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B34ED82AB4AD2700247E29 /* Persistence.swift */; };
-		62B34EDC2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62B34EDA2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld */; };
-		62CA19F32AB8BEFC0084F98C /* GameAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19F22AB8BEFC0084F98C /* GameAPI.swift */; };
-		62CA19F52AB8BF4C0084F98C /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19F42AB8BF4C0084F98C /* UserAPI.swift */; };
-		62CA19F72AB8BFA60084F98C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19F62AB8BFA60084F98C /* APIController.swift */; };
-		62CA19FB2AB8C4590084F98C /* GameOverviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA19FA2AB8C4590084F98C /* GameOverviewCard.swift */; };
-		62CA19FD2AB900A10084F98C /* dragontail-13.18.1 in Resources */ = {isa = PBXBuildFile; fileRef = 62CA19FC2AB900A00084F98C /* dragontail-13.18.1 */; };
-		62CA1A3A2AB907910084F98C /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA1A392AB907910084F98C /* GameDetailView.swift */; };
-		62CA1A3C2AB90FCA0084F98C /* DataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA1A3B2AB90FCA0084F98C /* DataProcess.swift */; };
-		62CA1A3E2AB910730084F98C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CA1A3D2AB910730084F98C /* Game.swift */; };
+		626413E62AB9FA0B006F3934 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413D02AB9FA0B006F3934 /* Persistence.swift */; };
+		626413E72AB9FA0B006F3934 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413D22AB9FA0B006F3934 /* UserAPI.swift */; };
+		626413E82AB9FA0B006F3934 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413D32AB9FA0B006F3934 /* Game.swift */; };
+		626413E92AB9FA0B006F3934 /* GameAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413D42AB9FA0B006F3934 /* GameAPI.swift */; };
+		626413EA2AB9FA0B006F3934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626413D62AB9FA0B006F3934 /* Preview Assets.xcassets */; };
+		626413EB2AB9FA0B006F3934 /* ARAM_Stats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 626413D72AB9FA0B006F3934 /* ARAM_Stats.xcdatamodeld */; };
+		626413EC2AB9FA0B006F3934 /* DataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413DA2AB9FA0B006F3934 /* DataProcess.swift */; };
+		626413ED2AB9FA0B006F3934 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413DB2AB9FA0B006F3934 /* APIController.swift */; };
+		626413EE2AB9FA0B006F3934 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413DD2AB9FA0B006F3934 /* GameDetailView.swift */; };
+		626413EF2AB9FA0B006F3934 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413DE2AB9FA0B006F3934 /* UserDetailView.swift */; };
+		626413F02AB9FA0B006F3934 /* ARAM_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413DF2AB9FA0B006F3934 /* ARAM_StatsApp.swift */; };
+		626413F12AB9FA0B006F3934 /* GameOverviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413E02AB9FA0B006F3934 /* GameOverviewCard.swift */; };
+		626413F22AB9FA0B006F3934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413E12AB9FA0B006F3934 /* ContentView.swift */; };
+		626413F32AB9FA0B006F3934 /* runesReforged.json in Resources */ = {isa = PBXBuildFile; fileRef = 626413E32AB9FA0B006F3934 /* runesReforged.json */; };
+		626413F42AB9FA0B006F3934 /* summoner.json in Resources */ = {isa = PBXBuildFile; fileRef = 626413E42AB9FA0B006F3934 /* summoner.json */; };
+		626413F52AB9FA0B006F3934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626413E52AB9FA0B006F3934 /* Assets.xcassets */; };
+		626413F72AB9FE70006F3934 /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626413F62AB9FE70006F3934 /* Runes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,24 +44,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		621500C72AB9405500A5890F /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		626413D02AB9FA0B006F3934 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		626413D22AB9FA0B006F3934 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		626413D32AB9FA0B006F3934 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		626413D42AB9FA0B006F3934 /* GameAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAPI.swift; sourceTree = "<group>"; };
+		626413D62AB9FA0B006F3934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		626413D82AB9FA0B006F3934 /* ARAM_Stats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARAM_Stats.xcdatamodel; sourceTree = "<group>"; };
+		626413DA2AB9FA0B006F3934 /* DataProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProcess.swift; sourceTree = "<group>"; };
+		626413DB2AB9FA0B006F3934 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		626413DD2AB9FA0B006F3934 /* GameDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		626413DE2AB9FA0B006F3934 /* UserDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		626413DF2AB9FA0B006F3934 /* ARAM_StatsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAM_StatsApp.swift; sourceTree = "<group>"; };
+		626413E02AB9FA0B006F3934 /* GameOverviewCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverviewCard.swift; sourceTree = "<group>"; };
+		626413E12AB9FA0B006F3934 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		626413E32AB9FA0B006F3934 /* runesReforged.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = runesReforged.json; sourceTree = "<group>"; };
+		626413E42AB9FA0B006F3934 /* summoner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = summoner.json; sourceTree = "<group>"; };
+		626413E52AB9FA0B006F3934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		626413F62AB9FE70006F3934 /* Runes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
 		62B34ECC2AB4AD2500247E29 /* ARAM Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARAM Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62B34ECF2AB4AD2500247E29 /* ARAM_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAM_StatsApp.swift; sourceTree = "<group>"; };
-		62B34ED12AB4AD2500247E29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		62B34ED32AB4AD2700247E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		62B34ED62AB4AD2700247E29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		62B34ED82AB4AD2700247E29 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		62B34EDB2AB4AD2700247E29 /* ARAM_Stats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARAM_Stats.xcdatamodel; sourceTree = "<group>"; };
 		62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62CA19F22AB8BEFC0084F98C /* GameAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAPI.swift; sourceTree = "<group>"; };
-		62CA19F42AB8BF4C0084F98C /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
-		62CA19F62AB8BFA60084F98C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		62CA19FA2AB8C4590084F98C /* GameOverviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverviewCard.swift; sourceTree = "<group>"; };
-		62CA19FC2AB900A00084F98C /* dragontail-13.18.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "dragontail-13.18.1"; sourceTree = "<group>"; };
-		62CA1A392AB907910084F98C /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
-		62CA1A3B2AB90FCA0084F98C /* DataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcess.swift; sourceTree = "<group>"; };
-		62CA1A3D2AB910730084F98C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +91,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		626413CF2AB9FA0B006F3934 /* ARAM Stats */ = {
+			isa = PBXGroup;
+			children = (
+				626413D02AB9FA0B006F3934 /* Persistence.swift */,
+				626413D12AB9FA0B006F3934 /* Models */,
+				626413D52AB9FA0B006F3934 /* Preview Content */,
+				626413D72AB9FA0B006F3934 /* ARAM_Stats.xcdatamodeld */,
+				626413D92AB9FA0B006F3934 /* Controllers */,
+				626413DC2AB9FA0B006F3934 /* Views */,
+				626413E22AB9FA0B006F3934 /* Assets */,
+			);
+			path = "ARAM Stats";
+			sourceTree = "<group>";
+		};
+		626413D12AB9FA0B006F3934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				626413D22AB9FA0B006F3934 /* UserAPI.swift */,
+				626413D32AB9FA0B006F3934 /* Game.swift */,
+				626413D42AB9FA0B006F3934 /* GameAPI.swift */,
+				626413F62AB9FE70006F3934 /* Runes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		626413D52AB9FA0B006F3934 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				626413D62AB9FA0B006F3934 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		626413D92AB9FA0B006F3934 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				626413DA2AB9FA0B006F3934 /* DataProcess.swift */,
+				626413DB2AB9FA0B006F3934 /* APIController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		626413DC2AB9FA0B006F3934 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				626413DD2AB9FA0B006F3934 /* GameDetailView.swift */,
+				626413DE2AB9FA0B006F3934 /* UserDetailView.swift */,
+				626413DF2AB9FA0B006F3934 /* ARAM_StatsApp.swift */,
+				626413E02AB9FA0B006F3934 /* GameOverviewCard.swift */,
+				626413E12AB9FA0B006F3934 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		626413E22AB9FA0B006F3934 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				626413E32AB9FA0B006F3934 /* runesReforged.json */,
+				626413E42AB9FA0B006F3934 /* summoner.json */,
+				626413E52AB9FA0B006F3934 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		62B34EC32AB4AD2500247E29 = {
 			isa = PBXGroup;
 			children = (
-				62B34ECE2AB4AD2500247E29 /* ARAM Stats */,
+				626413CF2AB9FA0B006F3934 /* ARAM Stats */,
 				62B34ECD2AB4AD2500247E29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,60 +171,6 @@
 				62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		62B34ECE2AB4AD2500247E29 /* ARAM Stats */ = {
-			isa = PBXGroup;
-			children = (
-				62CA19FC2AB900A00084F98C /* dragontail-13.18.1 */,
-				62CA19F12AB8BEC00084F98C /* Controllers */,
-				62CA19F02AB8BEB90084F98C /* Views */,
-				62CA19EF2AB8BEA90084F98C /* Models */,
-				62B34ED32AB4AD2700247E29 /* Assets.xcassets */,
-				62B34ED82AB4AD2700247E29 /* Persistence.swift */,
-				62B34EDA2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld */,
-				62B34ED52AB4AD2700247E29 /* Preview Content */,
-			);
-			path = "ARAM Stats";
-			sourceTree = "<group>";
-		};
-		62B34ED52AB4AD2700247E29 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				62B34ED62AB4AD2700247E29 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		62CA19EF2AB8BEA90084F98C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				62CA19F22AB8BEFC0084F98C /* GameAPI.swift */,
-				62CA19F42AB8BF4C0084F98C /* UserAPI.swift */,
-				62CA1A3D2AB910730084F98C /* Game.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		62CA19F02AB8BEB90084F98C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				62B34ECF2AB4AD2500247E29 /* ARAM_StatsApp.swift */,
-				62B34ED12AB4AD2500247E29 /* ContentView.swift */,
-				62CA19FA2AB8C4590084F98C /* GameOverviewCard.swift */,
-				62CA1A392AB907910084F98C /* GameDetailView.swift */,
-				621500C72AB9405500A5890F /* UserDetailView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		62CA19F12AB8BEC00084F98C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				62CA19F62AB8BFA60084F98C /* APIController.swift */,
-				62CA1A3B2AB90FCA0084F98C /* DataProcess.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62CA19FD2AB900A10084F98C /* dragontail-13.18.1 in Resources */,
-				62B34ED72AB4AD2700247E29 /* Preview Assets.xcassets in Resources */,
-				62B34ED42AB4AD2700247E29 /* Assets.xcassets in Resources */,
+				626413F42AB9FA0B006F3934 /* summoner.json in Resources */,
+				626413EA2AB9FA0B006F3934 /* Preview Assets.xcassets in Resources */,
+				626413F52AB9FA0B006F3934 /* Assets.xcassets in Resources */,
+				626413F32AB9FA0B006F3934 /* runesReforged.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,18 +305,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62CA19F72AB8BFA60084F98C /* APIController.swift in Sources */,
-				62B34ED92AB4AD2700247E29 /* Persistence.swift in Sources */,
-				62CA19F32AB8BEFC0084F98C /* GameAPI.swift in Sources */,
-				62CA19F52AB8BF4C0084F98C /* UserAPI.swift in Sources */,
-				621500C82AB9405500A5890F /* UserDetailView.swift in Sources */,
-				62CA19FB2AB8C4590084F98C /* GameOverviewCard.swift in Sources */,
-				62CA1A3C2AB90FCA0084F98C /* DataProcess.swift in Sources */,
-				62CA1A3E2AB910730084F98C /* Game.swift in Sources */,
-				62B34ED22AB4AD2500247E29 /* ContentView.swift in Sources */,
-				62CA1A3A2AB907910084F98C /* GameDetailView.swift in Sources */,
-				62B34EDC2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld in Sources */,
-				62B34ED02AB4AD2500247E29 /* ARAM_StatsApp.swift in Sources */,
+				626413F72AB9FE70006F3934 /* Runes.swift in Sources */,
+				626413ED2AB9FA0B006F3934 /* APIController.swift in Sources */,
+				626413E92AB9FA0B006F3934 /* GameAPI.swift in Sources */,
+				626413F22AB9FA0B006F3934 /* ContentView.swift in Sources */,
+				626413F12AB9FA0B006F3934 /* GameOverviewCard.swift in Sources */,
+				626413E62AB9FA0B006F3934 /* Persistence.swift in Sources */,
+				626413E82AB9FA0B006F3934 /* Game.swift in Sources */,
+				626413EF2AB9FA0B006F3934 /* UserDetailView.swift in Sources */,
+				626413EB2AB9FA0B006F3934 /* ARAM_Stats.xcdatamodeld in Sources */,
+				626413F02AB9FA0B006F3934 /* ARAM_StatsApp.swift in Sources */,
+				626413E72AB9FA0B006F3934 /* UserAPI.swift in Sources */,
+				626413EC2AB9FA0B006F3934 /* DataProcess.swift in Sources */,
+				626413EE2AB9FA0B006F3934 /* GameDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,12 +635,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		62B34EDA2AB4AD2700247E29 /* ARAM_Stats.xcdatamodeld */ = {
+		626413D72AB9FA0B006F3934 /* ARAM_Stats.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				62B34EDB2AB4AD2700247E29 /* ARAM_Stats.xcdatamodel */,
+				626413D82AB9FA0B006F3934 /* ARAM_Stats.xcdatamodel */,
 			);
-			currentVersion = 62B34EDB2AB4AD2700247E29 /* ARAM_Stats.xcdatamodel */;
+			currentVersion = 626413D82AB9FA0B006F3934 /* ARAM_Stats.xcdatamodel */;
 			path = ARAM_Stats.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

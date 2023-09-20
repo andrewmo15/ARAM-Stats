@@ -48,14 +48,15 @@ struct GameUser: Decodable {
 }
 
 struct Perks: Decodable {
-    var styles: [Runes]
+    var styles: [Style]
 }
 
-struct Runes: Decodable {
+struct Style: Decodable {
     var description: String
-    var selections: [Rune]
+    var selections: [Perk]
+    var style: Int
 }
 
-struct Rune: Decodable {
+struct Perk: Decodable {
     var perk: Int
 }

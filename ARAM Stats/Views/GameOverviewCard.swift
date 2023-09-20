@@ -18,33 +18,33 @@ struct GameOverviewCard: View {
                 .frame(height: 200)
             HStack {
                 VStack(alignment: .leading) {
-                    Text("\(game.userGameDetails.win ? "Win" : "Loss")")
-                    Text("\(game.gameInfo.gameDuration)")
+                    Text("\(game.userGameDetails.win ? "Win" : "Loss")").foregroundColor(.white)
+                    Text("\(game.gameInfo.gameDuration)").foregroundColor(.white)
                 }
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("\(game.userGameDetails.championName)")
+                        Image(game.userGameDetails.championName).resizable().frame(width: 32.0, height: 32.0)
                         VStack {
-                            Text("\(game.userGameDetails.summoner1Id)")
-                            Text("\(game.userGameDetails.summoner2Id)")
+                            Image(game.userGameDetails.summoner1Id).resizable().frame(width: 32.0, height: 32.0)
+                            Image(game.userGameDetails.summoner2Id).resizable().frame(width: 32.0, height: 32.0)
                         }
                         VStack {
-                            Text("\(game.userGameDetails.rune1)")
-                            Text("\(game.userGameDetails.rune2)")
+                            Image(game.userGameDetails.rune1).resizable().frame(width: 32.0, height: 32.0)
+                            Image(game.userGameDetails.rune2).resizable().frame(width: 32.0, height: 32.0)
                         }
-                        Text("\(game.userGameDetails.kills)/\(game.userGameDetails.deaths)/\(game.userGameDetails.assists)")
+                        Text("\(game.userGameDetails.kills)/\(game.userGameDetails.deaths)/\(game.userGameDetails.assists)").foregroundColor(.white)
                     }
                     HStack {
-                        Text("\(game.userGameDetails.item0)")
-                        Text("\(game.userGameDetails.item1)")
-                        Text("\(game.userGameDetails.item2)")
-                        Text("\(game.userGameDetails.item3)")
-                        Text("\(game.userGameDetails.item4)")
-                        Text("\(game.userGameDetails.item5)")
-                        Text("\(game.userGameDetails.item6)")
+                        Image(game.userGameDetails.item0).resizable().frame(width: 32.0, height: 32.0)
+                        Image(game.userGameDetails.item1).resizable().frame(width: 32.0, height: 32.0)
+                        Image(game.userGameDetails.item2).resizable().frame(width: 32.0, height: 32.0)
+                        Image(game.userGameDetails.item3).resizable().frame(width: 32.0, height: 32.0)
+                        Image(game.userGameDetails.item4).resizable().frame(width: 32.0, height: 32.0)
+                        Image(game.userGameDetails.item5).resizable().frame(width: 32.0, height: 32.0)
+                        Image(game.userGameDetails.item6).resizable().frame(width: 32.0, height: 32.0)
                     }
                 }
-                Text("\(game.gameInfo.daysElapsed) days ago")
+                Text("\(game.gameInfo.daysElapsed) days ago").foregroundColor(.white)
             }
         }
     }

@@ -42,7 +42,7 @@ class APIController: ObservableObject {
 
 struct APIService {
     
-    private let apikey = "RGAPI-8ac06c65-0807-4b9a-9982-b6fe3900e329"
+    private let apikey = "RGAPI-c7866c26-8627-4e1f-9b77-1fbef12b47b4"
     private let dataProcess = DataProcess()
     
     func getUser(username: String) async -> Result<String, Error> {

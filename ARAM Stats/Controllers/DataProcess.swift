@@ -9,6 +9,57 @@ import Foundation
 
 class DataProcess {
     
+    private var runeMap: Dictionary<Int, String> = Dictionary<Int, String>()
+    private var summonerSpellMap: Dictionary<Int, String> = Dictionary<Int, String>()
+    
+    init() {
+        self.loadRunes()
+        self.getSummonerSpells()
+    }
+    
+    func getSummonerSpells() {
+        if let url = Bundle.main.url(forResource: "summoner", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url, options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as! Dictionary<String, Any>
+                let jsonData = jsonResult["data"] as! Dictionary<String, Dictionary<String, Any>>
+                for (name, dic) in jsonData {
+                    for (key, val) in dic {
+                        if key == "key" {
+                            self.summonerSpellMap[Int(val as! String)!] = name
+                        }
+                    }
+                }
+            } catch {
+                // handle error
+                print("error error")
+            }
+        } else {
+            print("cant load file")
+        }
+    }
+    
+    func loadRunes() {
+        if let url = Bundle.main.url(forResource: "runesReforged", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let runes = try JSONDecoder().decode([Runes].self, from: data)
+                for rune in runes {
+                    var arr = rune.icon.split(separator: "/")
+                    self.runeMap[rune.id] = String(arr[arr.count - 1].split(separator: ".")[0])
+                    for slot in rune.slots {
+                        for r in slot.runes {
+                            arr = r.icon.split(separator: "/")
+                            self.runeMap[r.id] = String(arr[arr.count - 1].split(separator: ".")[0])
+                        }
+                    }
+                }
+            } catch {
+                print("error:\(error)")
+            }
+        }
+    }
+    
     func processData(game: GameAPI, gameID: String, puuid: String) -> Game {
         let user = self.getUserGameDetails(game: game, puuid: puuid)
         return Game(
@@ -60,19 +111,19 @@ class DataProcess {
             championName: user.championName,
             deaths: user.deaths,
             goldEarned: user.goldEarned,
-            item0: user.item0,
-            item1: user.item1,
-            item2: user.item2,
-            item3: user.item3,
-            item4: user.item4,
-            item5: user.item5,
-            item6: user.item6,
+            item0: String(user.item0),
+            item1: String(user.item1),
+            item2: String(user.item2),
+            item3: String(user.item3),
+            item4: String(user.item4),
+            item5: String(user.item5),
+            item6: String(user.item6),
             kills: user.kills,
             id: user.puuid,
-            rune1: user.perks.styles[0].selections[0].perk,
-            rune2: user.perks.styles[1].selections[0].perk,
-            summoner1Id: user.summoner1Id,
-            summoner2Id: user.summoner2Id,
+            rune1: self.runeMap[user.perks.styles[0].selections[0].perk] ?? "",
+            rune2: self.runeMap[user.perks.styles[1].style] ?? "",
+            summoner1Id: self.summonerSpellMap[user.summoner1Id] ?? "",
+            summoner2Id: self.summonerSpellMap[user.summoner2Id] ?? "",
             summonerLevel: user.summonerLevel,
             summonerName: user.summonerName,
             teamId: user.teamId,
