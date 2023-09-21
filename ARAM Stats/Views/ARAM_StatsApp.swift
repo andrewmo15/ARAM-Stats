@@ -14,7 +14,7 @@ struct ARAM_StatsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(dataControllerError: dataController.error)
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }

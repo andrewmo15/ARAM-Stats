@@ -28,14 +28,17 @@ struct GameOverviewView: View {
             
             if api.isLoading {
                 ProgressView().progressViewStyle(CircularProgressViewStyle(tint: Color.blue)).frame(height: 200)
-            }
-            VStack(spacing: -0.25) {
-                ForEach(api.stats) { stat in
-                    StatsCards(stats: stat)
-                }
-                ForEach(api.games) { game in
-                    NavigationLink(destination: GameDetailView(game: game, region: region)) {
-                        GameOverviewCard(game: game).border(Color(UIColor.lightGray), width: 0.5)
+            } else if let error = api.error {
+                Text("\(error)").frame(height: 200)
+            } else {
+                VStack(spacing: -0.25) {
+                    ForEach(api.stats) { stat in
+                        StatsCards(stats: stat)
+                    }
+                    ForEach(api.games) { game in
+                        NavigationLink(destination: GameDetailView(game: game, region: region)) {
+                            GameOverviewCard(game: game).border(Color(UIColor.lightGray), width: 0.5)
+                        }
                     }
                 }
             }

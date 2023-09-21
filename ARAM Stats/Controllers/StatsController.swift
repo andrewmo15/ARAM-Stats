@@ -7,23 +7,28 @@
 
 import Foundation
 
-struct StatsController {
+class StatsController {
     
-    private var games = [Game]()
+    var error: String?
     
-    func getStats(games: [Game]) -> Stats {
-        return Stats(winCount: self.getNumWins(games: games),
-                     wr: self.getWinRate(games: games),
-                     averageKDA: self.getAverageKDA(games: games),
-                     simplifiedKDA: self.getSimplifiedKDA(games: games),
-                     longestGame: self.getLongestGame(games: games),
-                     shortestGame: self.getShortestGame(games: games),
-                     bloodiestByTotalKill: self.getBloodiestGameByTotalKills(games: games),
-                     bloodiestByKillsPerMin: self.getBloodiestGameByKillsPerMin(games: games),
-                     mostPlayedChamp: self.getMostPlayedChampion(games: games),
-                     mostPlayedChampGameCount: self.getMostPlayedChampionGameCount(games: games),
-                     highestWRChamp: self.getHighestWRChampion(games: games),
-                     highestWRChampWR: self.getHighestWRChampionWR(games: games))
+    func getStats(games: [Game]) -> Stats? {
+        if let longestGame = self.getLongestGame(games: games), let shortestGame = self.getShortestGame(games: games), let bloodiestByTotalKills = self.getBloodiestGameByTotalKills(games: games), let bloodiestByKPM = self.getBloodiestGameByKillsPerMin(games: games) {
+            return Stats(winCount: self.getNumWins(games: games),
+                         wr: self.getWinRate(games: games),
+                         averageKDA: self.getAverageKDA(games: games),
+                         simplifiedKDA: self.getSimplifiedKDA(games: games),
+                         longestGame: longestGame,
+                         shortestGame: shortestGame,
+                         bloodiestByTotalKill: bloodiestByTotalKills,
+                         bloodiestByKillsPerMin: bloodiestByKPM,
+                         mostPlayedChamp: self.getMostPlayedChampion(games: games),
+                         mostPlayedChampGameCount: self.getMostPlayedChampionGameCount(games: games),
+                         highestWRChamp: self.getHighestWRChampion(games: games),
+                         highestWRChampWR: self.getHighestWRChampionWR(games: games))
+        } else {
+            self.error = "Could not get stats"
+            return nil
+        }
     }
     
     private func getNumWins(games: [Game]) -> Int {
@@ -74,20 +79,20 @@ struct StatsController {
         return "\(String(format: "%.2f", simplifiedKDA)):1"
     }
     
-    private func getLongestGame(games: [Game]) -> Game {
-        return games.max { a, b in a.gameInfo.gameDuration < b.gameInfo.gameDuration }!
+    private func getLongestGame(games: [Game]) -> Game? {
+        return games.max { a, b in a.gameInfo.gameDuration < b.gameInfo.gameDuration }
     }
     
-    private func getShortestGame(games: [Game]) -> Game {
-        return games.max { a, b in a.gameInfo.gameDuration > b.gameInfo.gameDuration }!
+    private func getShortestGame(games: [Game]) -> Game? {
+        return games.max { a, b in a.gameInfo.gameDuration > b.gameInfo.gameDuration }
     }
     
-    private func getBloodiestGameByTotalKills(games: [Game]) -> Game {
-        return games.max { a, b in (a.team1.kills + a.team2.kills) < (b.team1.kills + b.team2.kills) }!
+    private func getBloodiestGameByTotalKills(games: [Game]) -> Game? {
+        return games.max { a, b in (a.team1.kills + a.team2.kills) < (b.team1.kills + b.team2.kills) }
     }
     
-    private func getBloodiestGameByKillsPerMin(games: [Game]) -> Game {
-        return games.max { a, b in ((a.team1.kills + a.team2.kills) / a.gameInfo.gameDuration) < ((b.team1.kills + b.team2.kills) / b.gameInfo.gameDuration) }!
+    private func getBloodiestGameByKillsPerMin(games: [Game]) -> Game? {
+        return games.max { a, b in ((a.team1.kills + a.team2.kills) / a.gameInfo.gameDuration) < ((b.team1.kills + b.team2.kills) / b.gameInfo.gameDuration) }
     }
     
     private func getMostPlayedChampion(games: [Game]) -> String {

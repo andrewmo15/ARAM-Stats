@@ -11,6 +11,7 @@ class DataProcess {
     
     private var runeMap: Dictionary<Int, String> = Dictionary<Int, String>()
     private var summonerSpellMap: Dictionary<Int, String> = Dictionary<Int, String>()
+    var error: String?
     
     init() {
         self.loadRunes()
@@ -21,21 +22,25 @@ class DataProcess {
         if let url = Bundle.main.url(forResource: "summoner", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url, options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as! Dictionary<String, Any>
-                let jsonData = jsonResult["data"] as! Dictionary<String, Dictionary<String, Any>>
-                for (name, dic) in jsonData {
-                    for (key, val) in dic {
-                        if key == "key" {
-                            self.summonerSpellMap[Int(val as! String)!] = name
+                if let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Dictionary<String, Any> {
+                    if let jsonData = jsonResult["data"] as? Dictionary<String, Dictionary<String, Any>> {
+                        for (name, dic) in jsonData {
+                            for (key, val) in dic {
+                                if key == "key" {
+                                    self.summonerSpellMap[Int(val as? String ?? "-1") ?? -1] = name
+                                }
+                            }
                         }
+                        return
                     }
                 }
+                self.error = "Could not load summoner spell data"
             } catch {
                 // handle error
-                print("error error")
+                self.error = "Could not load summoner spell data"
             }
         } else {
-            print("cant load file")
+            self.error = "Could not load summoner spell data"
         }
     }
     
@@ -60,14 +65,17 @@ class DataProcess {
         }
     }
     
-    func processData(game: GameAPI, gameID: String, puuid: String) -> Game {
-        let user = self.getUserGameDetails(game: game, puuid: puuid)
-        return Game(
-            id: gameID,
-            gameInfo: self.getGameInfo(info: game.info),
-            userGameDetails: user!,
-            team1: self.getTeam(win: user!.win, users: game.info.participants),
-            team2: self.getTeam(win: !(user!.win), users: game.info.participants))
+    func processData(game: GameAPI, gameID: String, puuid: String) -> Game? {
+        if let user = self.getUserGameDetails(game: game, puuid: puuid) {
+            return Game(
+                id: gameID,
+                gameInfo: self.getGameInfo(info: game.info),
+                userGameDetails: user,
+                team1: self.getTeam(win: user.win, users: game.info.participants),
+                team2: self.getTeam(win: !(user.win), users: game.info.participants))
+        }
+        self.error = "Could not process data"
+        return nil
     }
     
     private func getUserGameDetails(game: GameAPI, puuid: String) -> Participant? {

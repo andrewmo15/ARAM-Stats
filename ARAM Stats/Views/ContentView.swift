@@ -13,6 +13,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var searchUsers: FetchedResults<SearchUser>
     
+    @State var dataControllerError: String?
     @State private var username: String = ""
     @State private var present = false
     @State private var region: String = "NA"
@@ -56,15 +57,19 @@ struct ContentView: View {
                     }.accentColor(.black).frame(height: 50).border(Color(UIColor.lightGray), width: 0.5)
                 }.padding(15)
                 VStack(alignment: .leading) {
-                    HStack {
-                        Text("Recent Searches").bold().padding().frame(maxWidth: .infinity, alignment: .leading)
-                        Button("Delete All"){
-                            self.deleteSearchHistory()
-                        }.frame(maxWidth: .infinity, alignment: .trailing).foregroundColor(.gray).padding(.trailing, 10)
-                    }
-                    Table(searchUsers.suffix(10), selection: $selection) {
-                        TableColumn("Recent Searches") { user in
-                            Text("\(user.username ?? "")")
+                    if let error = self.dataControllerError {
+                        Text("\(error)").frame(height: 200)
+                    } else {
+                        HStack {
+                            Text("Recent Searches").bold().padding().frame(maxWidth: .infinity, alignment: .leading)
+                            Button("Delete All"){
+                                self.deleteSearchHistory()
+                            }.frame(maxWidth: .infinity, alignment: .trailing).foregroundColor(.gray).padding(.trailing, 10)
+                        }
+                        Table(searchUsers.suffix(10), selection: $selection) {
+                            TableColumn("Recent Searches") { user in
+                                Text("\(user.username ?? "")")
+                            }
                         }
                     }
                 }
