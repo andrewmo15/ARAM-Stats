@@ -28,6 +28,7 @@
 		62916CBA2ABBDC29005570BD /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62916CB92ABBDC29005570BD /* StatsController.swift */; };
 		62916CBC2ABBDE21005570BD /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62916CBB2ABBDE21005570BD /* Stats.swift */; };
 		62916CBE2ABBE40C005570BD /* StatsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62916CBD2ABBE40C005570BD /* StatsCards.swift */; };
+		62B816602ABCB1B500D8714A /* extract.sh in Resources */ = {isa = PBXBuildFile; fileRef = 62B8165F2ABCB1B500D8714A /* extract.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B8165E2ABC931100D8714A /* ARAM-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ARAM-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
+		62B8165F2ABCB1B500D8714A /* extract.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = extract.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		626413E22AB9FA0B006F3934 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				62B8165F2ABCB1B500D8714A /* extract.sh */,
 				626413E32AB9FA0B006F3934 /* runesReforged.json */,
 				626413E42AB9FA0B006F3934 /* summoner.json */,
 				626413E52AB9FA0B006F3934 /* Assets.xcassets */,
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				626413F42AB9FA0B006F3934 /* summoner.json in Resources */,
+				62B816602ABCB1B500D8714A /* extract.sh in Resources */,
 				626413EA2AB9FA0B006F3934 /* Preview Assets.xcassets in Resources */,
 				626413F52AB9FA0B006F3934 /* Assets.xcassets in Resources */,
 				626413F32AB9FA0B006F3934 /* runesReforged.json in Resources */,
@@ -495,9 +499,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ARAM-Stats-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,9 +513,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,9 +534,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ARAM-Stats-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,9 +548,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewmo.ARAM-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
