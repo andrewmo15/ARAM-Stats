@@ -10,7 +10,11 @@ import Foundation
 class APIController: ObservableObject {
     
     @Published var games: [Game] = []
+    @Published var stats: [Stats] = []
+    @Published var isLoading: Bool = true
+    
     private let api = APIService()
+    private let s = StatsController()
     
     func fetchGames(username: String, region: String) {
         Task(priority: .background) {
@@ -35,14 +39,21 @@ class APIController: ObservableObject {
                     break
                 }
             }
-            self.games = gameDetails
+            let arr = gameDetails
+            let stat = s.getStats(games: arr)
+            let loading = false
+            await MainActor.run {
+                self.games = arr
+                self.stats = [stat]
+                self.isLoading = false
+            }
         }
     }
 }
 
 struct APIService {
     
-    private let apikey = "RGAPI-c7866c26-8627-4e1f-9b77-1fbef12b47b4"
+    private let apikey = "RGAPI-ca7ccd04-adbb-45a7-989a-46200149dad6"
     private let dataProcess = DataProcess()
     
     private var regionMap: Dictionary<String, String> = [
@@ -101,7 +112,7 @@ struct APIService {
     
     func getGameIDs(puuid: String, region: String) async -> Result<[String], Error> {
         do {
-            let url = URL(string: "https://\(regionMap[region]!).api.riotgames.com/lol/match/v5/matches/by-puuid/\(puuid)/ids?type=normal&start=0&count=1")!
+            let url = URL(string: "https://\(regionMap[region]!).api.riotgames.com/lol/match/v5/matches/by-puuid/\(puuid)/ids?type=normal&start=0&count=20")!
             
             var request = URLRequest(url: url)
             request.httpMethod = "GET"

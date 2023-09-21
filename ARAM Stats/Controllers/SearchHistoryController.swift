@@ -14,7 +14,7 @@ class SearchHistoryController: ObservableObject {
     
     init() {
         container.loadPersistentStores { description, error in
-            if let error = error {
+            if let _ = error {
                 print("Failed to load core data")
             }
         }

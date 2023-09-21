@@ -25,6 +25,15 @@ struct ContentView: View {
         NavigationStack(path: $path) {
             VStack {
                 HStack {
+                    Text("ARAM Stats")
+                        .frame(maxWidth: .infinity, alignment: .bottomLeading).padding(.leading, 15)
+                        .font(.system(size: 35))
+                        .bold()
+                        .lineLimit(1)
+                        .foregroundColor(.blue)
+                }.frame(height: 50).background(.white)
+                
+                HStack(spacing: -0.25) {
                     TextField("Search Summoner", text: $username, onCommit: {
                         let searchUser = SearchUser(context: moc)
                         searchUser.id = UUID()
@@ -32,15 +41,27 @@ struct ContentView: View {
                         searchUser.region = region
                         try? moc.save()
                         present = true
-                    }).padding()
+                    }).accentColor(.blue).frame(height: 50).autocapitalization(.none)
+                        .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 0)
+                                .stroke(lineWidth: 0)
+                                .border(Color(UIColor.lightGray), width: 0.5)
+                        )
+                    
                     Picker("Region", selection: $region) {
                         ForEach(regions, id: \.self) { reg in
                             Text("\(reg)")
                         }
-                    }
-                }
+                    }.accentColor(.black).frame(height: 50).border(Color(UIColor.lightGray), width: 0.5)
+                }.padding(15)
                 VStack(alignment: .leading) {
-                    Text("Recent History").padding()
+                    HStack {
+                        Text("Recent Searches").bold().padding().frame(maxWidth: .infinity, alignment: .leading)
+                        Button("Delete All"){
+                            self.deleteSearchHistory()
+                        }.frame(maxWidth: .infinity, alignment: .trailing).foregroundColor(.gray).padding(.trailing, 10)
+                    }
                     Table(searchUsers.suffix(10), selection: $selection) {
                         TableColumn("Recent Searches") { user in
                             Text("\(user.username ?? "")")
@@ -59,7 +80,14 @@ struct ContentView: View {
             if let selection = selection, let user = searchUsers.first(where: {$0.id == selection}) {
                 path.append(user)
             }
+        }.accentColor(.white)
+    }
+    
+    private func deleteSearchHistory() {
+        for user in searchUsers {
+            moc.delete(user)
         }
+        try? moc.save()
     }
 }
 

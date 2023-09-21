@@ -30,6 +30,7 @@ struct Team: Hashable {
     var assists: Int
     var turretsLost: Int
     var inhibitorsLost: Int
+    var maxDamage: Int
 }
 
 struct Participant: Identifiable, Hashable {

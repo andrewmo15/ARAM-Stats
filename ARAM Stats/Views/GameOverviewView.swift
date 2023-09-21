@@ -15,14 +15,31 @@ struct GameOverviewView: View {
     @State private var viewDidLoad = false
 
     var body: some View {
+        HStack {
+            Text("\(username)")
+                .frame(maxWidth: .infinity, alignment: .bottomLeading).padding(.leading, 15)
+                .font(.system(size: 35))
+                .bold()
+                .lineLimit(1)
+                .foregroundColor(.white)
+        }.frame(height: 50).background(.blue)
+        
         ScrollView(.vertical, showsIndicators: false) {
-            VStack {
+            
+            if api.isLoading {
+                ProgressView().progressViewStyle(CircularProgressViewStyle(tint: Color.blue)).frame(height: 200)
+            }
+            VStack(spacing: -0.25) {
+                ForEach(api.stats) { stat in
+                    StatsCards(stats: stat)
+                }
                 ForEach(api.games) { game in
                     NavigationLink(destination: GameDetailView(game: game, region: region)) {
-                        GameOverviewCard(game: game)
+                        GameOverviewCard(game: game).border(Color(UIColor.lightGray), width: 0.5)
                     }
                 }
             }
+            
         }
         .onAppear {
             if !viewDidLoad {

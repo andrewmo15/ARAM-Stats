@@ -17,7 +17,7 @@ class DataProcess {
         self.getSummonerSpells()
     }
     
-    func getSummonerSpells() {
+    private func getSummonerSpells() {
         if let url = Bundle.main.url(forResource: "summoner", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url, options: .mappedIfSafe)
@@ -39,7 +39,7 @@ class DataProcess {
         }
     }
     
-    func loadRunes() {
+    private func loadRunes() {
         if let url = Bundle.main.url(forResource: "runesReforged", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
@@ -90,18 +90,20 @@ class DataProcess {
         var assists = 0
         var inhibitors = 0
         var turrets = 0
+        var maxDamage = 0
         for user in users {
             if user.win == win {
                 participants.append(self.getUser(user: user))
                 kills += user.kills
                 deaths += user.deaths
                 assists += user.assists
+                maxDamage = max(maxDamage, user.totalDamageDealtToChampions)
             } else {
                 inhibitors = user.inhibitorsLost
                 turrets = user.turretsLost
             }
         }
-        return Team(participants: participants, isBlueSide: win, win: win, kills: kills, deaths: deaths, assists: assists, turretsLost: turrets, inhibitorsLost: inhibitors)
+        return Team(participants: participants, isBlueSide: win, win: win, kills: kills, deaths: deaths, assists: assists, turretsLost: turrets, inhibitorsLost: inhibitors, maxDamage: maxDamage)
     }
     
     private func getUser(user: GameUser) -> Participant {

@@ -25,6 +25,9 @@
 		62852A152ABA8D5000D69FB3 /* GameOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62852A142ABA8D5000D69FB3 /* GameOverviewView.swift */; };
 		62852A182ABAA5E500D69FB3 /* search-history.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62852A162ABAA5E500D69FB3 /* search-history.xcdatamodeld */; };
 		62852A1A2ABAA62D00D69FB3 /* SearchHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62852A192ABAA62D00D69FB3 /* SearchHistoryController.swift */; };
+		62916CBA2ABBDC29005570BD /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62916CB92ABBDC29005570BD /* StatsController.swift */; };
+		62916CBC2ABBDE21005570BD /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62916CBB2ABBDE21005570BD /* Stats.swift */; };
+		62916CBE2ABBE40C005570BD /* StatsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62916CBD2ABBE40C005570BD /* StatsCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		62852A142ABA8D5000D69FB3 /* GameOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverviewView.swift; sourceTree = "<group>"; };
 		62852A172ABAA5E500D69FB3 /* search-history.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "search-history.xcdatamodel"; sourceTree = "<group>"; };
 		62852A192ABAA62D00D69FB3 /* SearchHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryController.swift; sourceTree = "<group>"; };
+		62916CB92ABBDC29005570BD /* StatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
+		62916CBB2ABBDE21005570BD /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		62916CBD2ABBE40C005570BD /* StatsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCards.swift; sourceTree = "<group>"; };
 		62B34ECC2AB4AD2500247E29 /* ARAM Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARAM Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +119,7 @@
 				626413D32AB9FA0B006F3934 /* Game.swift */,
 				626413D42AB9FA0B006F3934 /* GameAPI.swift */,
 				626413F62AB9FE70006F3934 /* Runes.swift */,
+				62916CBB2ABBDE21005570BD /* Stats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 				626413DA2AB9FA0B006F3934 /* DataProcess.swift */,
 				626413DB2AB9FA0B006F3934 /* APIController.swift */,
 				62852A192ABAA62D00D69FB3 /* SearchHistoryController.swift */,
+				62916CB92ABBDC29005570BD /* StatsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 				626413E02AB9FA0B006F3934 /* GameOverviewCard.swift */,
 				626413E12AB9FA0B006F3934 /* ContentView.swift */,
 				62852A142ABA8D5000D69FB3 /* GameOverviewView.swift */,
+				62916CBD2ABBE40C005570BD /* StatsCards.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,9 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				626413F72AB9FE70006F3934 /* Runes.swift in Sources */,
+				62916CBA2ABBDC29005570BD /* StatsController.swift in Sources */,
 				62852A152ABA8D5000D69FB3 /* GameOverviewView.swift in Sources */,
 				62852A1A2ABAA62D00D69FB3 /* SearchHistoryController.swift in Sources */,
 				626413ED2AB9FA0B006F3934 /* APIController.swift in Sources */,
+				62916CBE2ABBE40C005570BD /* StatsCards.swift in Sources */,
+				62916CBC2ABBDE21005570BD /* Stats.swift in Sources */,
 				626413E92AB9FA0B006F3934 /* GameAPI.swift in Sources */,
 				626413F22AB9FA0B006F3934 /* ContentView.swift in Sources */,
 				626413F12AB9FA0B006F3934 /* GameOverviewCard.swift in Sources */,
