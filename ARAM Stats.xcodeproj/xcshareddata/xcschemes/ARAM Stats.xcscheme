@@ -73,6 +73,13 @@
             ReferencedContainer = "container:ARAM Stats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "RIOT_API_TOKEN"
+            value = "RGAPI-1d0541c9-76a7-4983-a21b-23db8180ebe2"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

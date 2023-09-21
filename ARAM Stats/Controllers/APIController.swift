@@ -75,7 +75,7 @@ class APIController: ObservableObject {
 
 struct APIService {
     
-    private let apikey = "RGAPI-ca7ccd04-adbb-45a7-989a-46200149dad6"
+    private let apikey = ProcessInfo.processInfo.environment["RIOT_API_TOKEN"] ?? ""
     private let dataProcess = DataProcess()
     
     private var regionMap: Dictionary<String, String> = [

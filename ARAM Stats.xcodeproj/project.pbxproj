@@ -72,6 +72,7 @@
 		62B34ECC2AB4AD2500247E29 /* ARAM Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARAM Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B34EE12AB4AD2700247E29 /* ARAM StatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B34EEB2AB4AD2700247E29 /* ARAM StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARAM StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B8165E2ABC931100D8714A /* ARAM-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ARAM-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 		626413CF2AB9FA0B006F3934 /* ARAM Stats */ = {
 			isa = PBXGroup;
 			children = (
+				62B8165E2ABC931100D8714A /* ARAM-Stats-Info.plist */,
 				62852A162ABAA5E500D69FB3 /* search-history.xcdatamodeld */,
 				626413D12AB9FA0B006F3934 /* Models */,
 				626413D52AB9FA0B006F3934 /* Preview Content */,
@@ -489,8 +491,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARAM Stats/Preview Content\"";
+				DEVELOPMENT_TEAM = RD4JHDYVT6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ARAM-Stats-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -517,8 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARAM Stats/Preview Content\"";
+				DEVELOPMENT_TEAM = RD4JHDYVT6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ARAM-Stats-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

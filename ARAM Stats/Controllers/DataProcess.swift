@@ -60,7 +60,7 @@ class DataProcess {
                     }
                 }
             } catch {
-                print("error:\(error)")
+                self.error = "Could not load summoner spell data"
             }
         }
     }
